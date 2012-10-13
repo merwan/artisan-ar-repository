@@ -1,0 +1,6 @@
+adapter: mysql2
+encoding: utf8
+database: artisan_test
+username: root
+password:
+pool: 5

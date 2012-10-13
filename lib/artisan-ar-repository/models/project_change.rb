@@ -1,0 +1,2 @@
+class ProjectChange < Change
+end

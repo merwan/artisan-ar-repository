@@ -1,0 +1,2 @@
+class IterationChange < Change
+end

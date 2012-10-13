@@ -1,4 +1,4 @@
-artisan-ar-repository
-=====================
+artisan-repository
+==================
 
-Artisan persistance layer implemented with ActiveRecord
+Artisan persistance library

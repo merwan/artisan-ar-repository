@@ -1,0 +1,2 @@
+class StoryChange < Change
+end
