@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rake', '0.9.2.2'   
-gem 'artisan-repository', :path => "../artisan-repository"
+gem 'artisan-repository', '0.0.5'
 gem 'artisan-core', '0.0.1'
 gem 'activerecord', '3.1.6'
 gem 'acts-as-taggable-on', '~> 2.3.1'
