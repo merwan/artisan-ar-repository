@@ -1,3 +1,10 @@
+require "active_record"
+require "acts-as-taggable-on"
+
+dbconfig = YAML::load(File.open('config/database.yml'))
+ActiveRecord::Base.establish_connection(dbconfig)
+
+require 'artisan/repository'
 require 'artisan-ar-repository/story_repository'
 require 'artisan-ar-repository/project_repository'
 require 'artisan-ar-repository/iteration_repository'
@@ -41,3 +48,5 @@ module ArtisanArRepository
     @change_repo ||= ChangeRepository.new
   end
 end
+
+Artisan::Repository.register_repo(ArtisanArRepository)

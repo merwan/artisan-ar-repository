@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'artisan-ar-repository/artisan_ar_repository'
+require 'artisan-ar-repository'
 
 describe ArtisanArRepository do
   it "has a story repo" do
