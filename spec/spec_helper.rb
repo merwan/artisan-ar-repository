@@ -1,5 +1,5 @@
 $: << File.expand_path(File.dirname(__FILE__) + "/../lib")
-require "artisan-ar-repository"
+require "artisan_ar_repository"
 
 RSpec.configure do |config|
   # keep db clean by running in transaction which gets rolled back
