@@ -1,5 +1,13 @@
 $: << File.expand_path(File.dirname(__FILE__) + "/../lib")
+
+module Rails
+  def self.root
+    return File.expand_path(File.dirname(__FILE__) + "/../")
+  end
+end
+
 require "artisan_ar_repository"
+
 
 RSpec.configure do |config|
   # keep db clean by running in transaction which gets rolled back

@@ -1,7 +1,7 @@
 require "active_record"
 require "acts-as-taggable-on"
 
-dbconfig = YAML::load(File.open('config/database.yml'))
+dbconfig = YAML::load(File.open(Rails.root + '/config/database.yml'))
 ActiveRecord::Base.establish_connection(dbconfig)
 
 require 'artisan/repository'
