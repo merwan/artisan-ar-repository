@@ -1,10 +1,10 @@
 require 'rake/gempackagetask'
 
 PKG_NAME = "artisan-ar-repository"
-PKG_VERSION   = "0.0.2"
+PKG_VERSION   = "0.0.4"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_FILES = FileList[
-  'lib/artisan/**/*',
+  'lib/artisan-ar-repository/**/*',
 ]
 
 spec = Gem::Specification.new do |s|
