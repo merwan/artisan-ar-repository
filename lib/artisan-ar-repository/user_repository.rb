@@ -14,7 +14,7 @@ module ArtisanArRepository
         user = model_class.new(attributes)
         user.save!
         user
-      rescue ActiveRecord::RecordInvalid
+      rescue ActiveRecord::RecordInvalid 
         raise Artisan::RecordNotValid.new(user)
       end
     end

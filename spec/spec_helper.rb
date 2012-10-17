@@ -4,6 +4,10 @@ module Rails
   def self.root
     return File.expand_path(File.dirname(__FILE__) + "/../")
   end
+  
+  def self.env
+    'test'
+  end
 end
 
 require "artisan_ar_repository"

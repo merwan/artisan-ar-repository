@@ -1,7 +1,7 @@
 require 'rake/gempackagetask'
 
 PKG_NAME = "artisan-ar-repository"
-PKG_VERSION   = "0.0.5"
+PKG_VERSION   = "0.0.6"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_FILES = FileList[
   'lib/**/*',
