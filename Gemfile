@@ -10,5 +10,5 @@ gem 'devise', '1.4.5'
 gem 'warden', '1.0.6'
 
 group :test, :development do
-  gem 'rspec', '2.7.0'
+  gem 'rspec', '2.11.0'
 end

@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rspec/core/rake_task'
-load File.expand_path(File.dirname(__FILE__) + "/etc/tasks/gem.rake")
+load 'artisan-ar-repository.gemspec'
 
+task :default => [:spec]
 desc "Run specs"
-RSpec::Core::RakeTask.new
+RSpec::Core::RakeTask.new { |t| t.verbose = false }

@@ -2,6 +2,7 @@ require "active_record"
 require "acts-as-taggable-on"
 
 dbconfig = YAML::load(File.open(Rails.root + '/config/database.yml'))
+
 ActiveRecord::Base.establish_connection(dbconfig[Rails.env])
 
 require 'artisan/repository'
@@ -15,7 +16,7 @@ require 'artisan-ar-repository/change_repository'
 require 'artisan-ar-repository/user_repository'
 
 module ArtisanArRepository
-  
+
   def self.story
     @story_repo ||= StoryRepository.new
   end
@@ -27,7 +28,7 @@ module ArtisanArRepository
   def self.iteration
     @iteration_repo ||= IterationRepository.new
   end
-  
+
   def self.user
     @user_repo ||= UserRepository.new
   end
@@ -39,11 +40,11 @@ module ArtisanArRepository
   def self.member
     @member_repo ||= MemberRepository.new
   end
-  
+
   def self.project_configuration
     @project_config_repo ||= ProjectConfigurationRepository.new
   end
-  
+
   def self.change
     @change_repo ||= ChangeRepository.new
   end
