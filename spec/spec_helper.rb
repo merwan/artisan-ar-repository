@@ -2,7 +2,7 @@ $: << File.expand_path(File.dirname(__FILE__) + "/../lib")
 
 module Rails
   def self.root
-    return File.expand_path(File.dirname(__FILE__) + "/../")
+    return File.expand_path(File.dirname(__FILE__) + "/../") + "/"
   end
   
   def self.env
