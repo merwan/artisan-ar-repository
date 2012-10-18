@@ -1,7 +1,8 @@
 require "active_record"
 require "acts-as-taggable-on"
 
-dbconfig = YAML::load(File.open(Rails.root + 'config/database.yml'))
+db_yaml = File.join(Rails.root, '/config/database.yml')
+dbconfig = YAML::load(File.open(db_yaml))
 
 ActiveRecord::Base.establish_connection(dbconfig[Rails.env])
 

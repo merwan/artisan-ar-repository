@@ -1,3 +1,13 @@
+PATH
+  remote: /Users/brian/projects/artisan-dev/artisan-core
+  specs:
+    artisan-core (0.0.1)
+
+PATH
+  remote: /Users/brian/projects/artisan-dev/artisan-repository
+  specs:
+    artisan-repository (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -32,8 +42,6 @@ GEM
     acts-as-taggable-on (2.3.3)
       rails (~> 3.0)
     arel (2.2.3)
-    artisan-core (0.0.1)
-    artisan-repository (0.0.5)
     bcrypt-ruby (3.0.1)
     builder (3.0.3)
     devise (1.4.5)
@@ -108,8 +116,8 @@ PLATFORMS
 DEPENDENCIES
   activerecord (= 3.1.6)
   acts-as-taggable-on (~> 2.3.1)
-  artisan-core (= 0.0.1)
-  artisan-repository (= 0.0.5)
+  artisan-core!
+  artisan-repository!
   devise (= 1.4.5)
   mysql2 (~> 0.3.11)
   rake (= 0.9.2.2)

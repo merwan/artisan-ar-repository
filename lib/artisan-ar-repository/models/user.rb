@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
     future_user = future_user_repository.find_by_email(self.email)
     if future_user
       project = Artisan::Repository.project.find(future_user.project_id)
-      team = Team.new(project, self)
+      team = Artisan::Teams::Team.new(project, self)
       team.add_team_member(self)
       future_user_repository.delete(future_user.id)
     end
