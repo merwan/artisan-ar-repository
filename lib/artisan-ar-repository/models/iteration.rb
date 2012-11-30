@@ -17,4 +17,8 @@ class Iteration < ActiveRecord::Base
   def total_billed_points
     Artisan::Stories::StoryCollection.new(stories).billed_points
   end
+
+  def total_billed_points_by_craftsman
+    Artisan::Stories::StoryCollection.new(stories).billed_points_by_craftsman
+  end
 end
