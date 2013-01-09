@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rake', '0.9.2.2'   
-gem 'activerecord', '3.1.6'
-gem 'acts-as-taggable-on', '~> 2.3.1'
+gem 'rake', '0.9.2.2'
+gem 'activerecord', '3.1.10'
+gem 'acts-as-taggable-on'
 gem 'mysql2', '~> 0.3.11'
 gem 'devise', '1.4.5'
 gem 'warden', '1.0.6'
