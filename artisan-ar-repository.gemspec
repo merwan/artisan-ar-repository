@@ -1,7 +1,7 @@
 require 'rubygems/package_task'
 
 pkg_name = "artisan-ar-repository"
-pkg_version   = "0.0.9"
+pkg_version   = "0.0.11"
 
 spec = Gem::Specification.new do |s|
   s.name = pkg_name
